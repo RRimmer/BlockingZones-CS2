@@ -1,0 +1,161 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/csgostyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/bz.vcss_c" />
+	</styles>
+	<Panel class="bz-screen" hittest="false">
+		<Panel id="bz-menu" class="bz-menu bz-hidden" hittest="false">
+			<Panel class="bz-head" hittest="false">
+				<Panel class="bz-logo" hittest="false"><Label class="bz-logo-t stratum-bold-tf" text="BZ" /></Panel>
+				<Panel class="bz-head-text" hittest="false">
+					<Label id="bz-title" class="bz-title stratum-bold-tf" text="{s:title}" />
+					<Label id="bz-sub" class="bz-sub stratum-medium-tf" text="{s:sub}" />
+				</Panel>
+			</Panel>
+			<Panel id="bz-card" class="bz-card c-off" hittest="false">
+				<Panel class="bz-card-box" hittest="false"><Label id="bz-card-num" class="bz-card-num stratum-bold-tf" text="{s:cardnum}" /></Panel>
+				<Panel class="bz-card-text" hittest="false">
+					<Label id="bz-card-name" class="bz-card-name stratum-bold-tf" text="{s:cardname}" />
+					<Label id="bz-card-info" class="bz-card-info stratum-medium-tf" text="{s:cardinfo}" />
+				</Panel>
+			</Panel>
+			<Panel id="bz-now" class="bz-now c-off" hittest="false">
+				<Label id="bz-now-cap" class="bz-now-cap stratum-medium-tf" text="{s:nowcap}" />
+				<Label id="bz-now-val" class="bz-now-val stratum-bold-tf" text="{s:nowval}" />
+			</Panel>
+			<Panel class="bz-rows" hittest="false">
+				<Panel id="bz-r0" class="bz-row r-off" hittest="false">
+					<Panel class="bz-key" hittest="false"><Label id="bz-r0-k" class="bz-key-t stratum-bold-tf" text="{s:r0k}" /></Panel>
+					<Label id="bz-r0-t" class="bz-row-t stratum-medium-tf" text="{s:r0t}" />
+					<Panel class="bz-bar" hittest="false"><Panel id="bz-r0-bar" class="bz-bar-fill b-0" hittest="false" /></Panel>
+					<Label id="bz-r0-n" class="bz-row-n stratum-medium-tf" text="{s:r0n}" />
+				</Panel>
+				<Panel id="bz-r1" class="bz-row r-off" hittest="false">
+					<Panel class="bz-key" hittest="false"><Label id="bz-r1-k" class="bz-key-t stratum-bold-tf" text="{s:r1k}" /></Panel>
+					<Label id="bz-r1-t" class="bz-row-t stratum-medium-tf" text="{s:r1t}" />
+					<Panel class="bz-bar" hittest="false"><Panel id="bz-r1-bar" class="bz-bar-fill b-0" hittest="false" /></Panel>
+					<Label id="bz-r1-n" class="bz-row-n stratum-medium-tf" text="{s:r1n}" />
+				</Panel>
+				<Panel id="bz-r2" class="bz-row r-off" hittest="false">
+					<Panel class="bz-key" hittest="false"><Label id="bz-r2-k" class="bz-key-t stratum-bold-tf" text="{s:r2k}" /></Panel>
+					<Label id="bz-r2-t" class="bz-row-t stratum-medium-tf" text="{s:r2t}" />
+					<Panel class="bz-bar" hittest="false"><Panel id="bz-r2-bar" class="bz-bar-fill b-0" hittest="false" /></Panel>
+					<Label id="bz-r2-n" class="bz-row-n stratum-medium-tf" text="{s:r2n}" />
+				</Panel>
+				<Panel id="bz-r3" class="bz-row r-off" hittest="false">
+					<Panel class="bz-key" hittest="false"><Label id="bz-r3-k" class="bz-key-t stratum-bold-tf" text="{s:r3k}" /></Panel>
+					<Label id="bz-r3-t" class="bz-row-t stratum-medium-tf" text="{s:r3t}" />
+					<Panel class="bz-bar" hittest="false"><Panel id="bz-r3-bar" class="bz-bar-fill b-0" hittest="false" /></Panel>
+					<Label id="bz-r3-n" class="bz-row-n stratum-medium-tf" text="{s:r3n}" />
+				</Panel>
+				<Panel id="bz-r4" class="bz-row r-off" hittest="false">
+					<Panel class="bz-key" hittest="false"><Label id="bz-r4-k" class="bz-key-t stratum-bold-tf" text="{s:r4k}" /></Panel>
+					<Label id="bz-r4-t" class="bz-row-t stratum-medium-tf" text="{s:r4t}" />
+					<Panel class="bz-bar" hittest="false"><Panel id="bz-r4-bar" class="bz-bar-fill b-0" hittest="false" /></Panel>
+					<Label id="bz-r4-n" class="bz-row-n stratum-medium-tf" text="{s:r4n}" />
+				</Panel>
+				<Panel id="bz-r5" class="bz-row r-off" hittest="false">
+					<Panel class="bz-key" hittest="false"><Label id="bz-r5-k" class="bz-key-t stratum-bold-tf" text="{s:r5k}" /></Panel>
+					<Label id="bz-r5-t" class="bz-row-t stratum-medium-tf" text="{s:r5t}" />
+					<Panel class="bz-bar" hittest="false"><Panel id="bz-r5-bar" class="bz-bar-fill b-0" hittest="false" /></Panel>
+					<Label id="bz-r5-n" class="bz-row-n stratum-medium-tf" text="{s:r5n}" />
+				</Panel>
+				<Panel id="bz-r6" class="bz-row r-off" hittest="false">
+					<Panel class="bz-key" hittest="false"><Label id="bz-r6-k" class="bz-key-t stratum-bold-tf" text="{s:r6k}" /></Panel>
+					<Label id="bz-r6-t" class="bz-row-t stratum-medium-tf" text="{s:r6t}" />
+					<Panel class="bz-bar" hittest="false"><Panel id="bz-r6-bar" class="bz-bar-fill b-0" hittest="false" /></Panel>
+					<Label id="bz-r6-n" class="bz-row-n stratum-medium-tf" text="{s:r6n}" />
+				</Panel>
+				<Panel id="bz-r7" class="bz-row r-off" hittest="false">
+					<Panel class="bz-key" hittest="false"><Label id="bz-r7-k" class="bz-key-t stratum-bold-tf" text="{s:r7k}" /></Panel>
+					<Label id="bz-r7-t" class="bz-row-t stratum-medium-tf" text="{s:r7t}" />
+					<Panel class="bz-bar" hittest="false"><Panel id="bz-r7-bar" class="bz-bar-fill b-0" hittest="false" /></Panel>
+					<Label id="bz-r7-n" class="bz-row-n stratum-medium-tf" text="{s:r7n}" />
+				</Panel>
+				<Panel class="bz-sep" hittest="false" />
+				<Panel class="bz-nav" hittest="false">
+					<Panel id="bz-nav8" class="bz-nav-cell" hittest="false">
+						<Panel class="bz-key bz-key-nav" hittest="false"><Label class="bz-key-t stratum-bold-tf" text="8" /></Panel>
+						<Label id="bz-nav8-t" class="bz-nav-t stratum-medium-tf" text="{s:nav8}" />
+					</Panel>
+					<Panel class="bz-nav-cell" hittest="false">
+						<Panel class="bz-key bz-key-nav" hittest="false"><Label class="bz-key-t stratum-bold-tf" text="0" /></Panel>
+						<Label id="bz-nav0-t" class="bz-nav-t stratum-medium-tf" text="{s:nav0}" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel class="bz-foot" hittest="false"><Label id="bz-status" class="bz-status stratum-medium-tf" text="{s:status}" /></Panel>
+		</Panel>
+		<Panel id="bz-prev" class="bz-prev bz-hidden" hittest="false">
+			<Panel class="bz-p-head" hittest="false">
+				<Panel class="bz-logo bz-logo-s" hittest="false"><Label class="bz-logo-t stratum-bold-tf" text="BZ" /></Panel>
+				<Panel class="bz-p-text" hittest="false">
+					<Label id="bz-p-cap" class="bz-p-cap stratum-medium-tf" text="{s:pcap}" />
+					<Label id="bz-p-name" class="bz-p-name stratum-bold-tf" text="{s:pname}" />
+				</Panel>
+				<Panel id="bz-p-state" class="bz-p-state p-ok" hittest="false">
+					<Panel class="bz-p-dot" hittest="false" />
+					<Label id="bz-p-state-t" class="bz-p-state-t stratum-medium-tf" text="{s:pstate}" />
+				</Panel>
+				<Label id="bz-p-ang" class="bz-p-ang stratum-bold-tf" text="{s:pang}" />
+			</Panel>
+			<Panel class="bz-p-keys" hittest="false">
+				<Panel id="bz-pk1" class="bz-pk bz-pk-go" hittest="false">
+					<Panel class="bz-pk-box" hittest="false"><Label class="bz-pk-num stratum-bold-tf" text="1" /></Panel>
+					<Label id="bz-pk1-t" class="bz-pk-t stratum-medium-tf" text="{s:pk1}" />
+				</Panel>
+				<Panel id="bz-pk2" class="bz-pk" hittest="false">
+					<Panel class="bz-pk-box" hittest="false"><Label class="bz-pk-num stratum-bold-tf" text="2" /></Panel>
+					<Label id="bz-pk2-t" class="bz-pk-t stratum-medium-tf" text="{s:pk2}" />
+				</Panel>
+				<Panel id="bz-pk3" class="bz-pk" hittest="false">
+					<Panel class="bz-pk-box" hittest="false"><Label class="bz-pk-num stratum-bold-tf" text="3" /></Panel>
+					<Label id="bz-pk3-t" class="bz-pk-t stratum-medium-tf" text="{s:pk3}" />
+				</Panel>
+				<Panel id="bz-pk4" class="bz-pk" hittest="false">
+					<Panel class="bz-pk-box" hittest="false"><Label class="bz-pk-num stratum-bold-tf" text="4" /></Panel>
+					<Label id="bz-pk4-t" class="bz-pk-t stratum-medium-tf" text="{s:pk4}" />
+				</Panel>
+				<Panel id="bz-pk5" class="bz-pk" hittest="false">
+					<Panel class="bz-pk-box" hittest="false"><Label class="bz-pk-num stratum-bold-tf" text="5" /></Panel>
+					<Label id="bz-pk5-t" class="bz-pk-t stratum-medium-tf" text="{s:pk5}" />
+				</Panel>
+				<Panel id="bz-pk0" class="bz-pk bz-pk-stop" hittest="false">
+					<Panel class="bz-pk-box" hittest="false"><Label class="bz-pk-num stratum-bold-tf" text="0" /></Panel>
+					<Label id="bz-pk0-t" class="bz-pk-t stratum-medium-tf" text="{s:pk0}" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="bz-note" class="bz-note bz-hidden" hittest="false">
+			<Panel class="bz-n-body" hittest="false">
+			<Panel class="bz-n-head" hittest="false">
+				<Panel class="bz-lock" hittest="false">
+					<Panel class="bz-lock-arc" hittest="false" />
+					<Panel class="bz-lock-body" hittest="false" />
+				</Panel>
+				<Panel class="bz-n-text-box" hittest="false">
+					<Label id="bz-n-title" class="bz-n-title stratum-bold-tf" text="{s:ntitle}" />
+					<Label id="bz-n-text" class="bz-n-text stratum-medium-tf" text="{s:ntext}" />
+				</Panel>
+			</Panel>
+			<Panel id="bz-n-ladder" class="bz-n-ladder lv-0" hittest="false">
+				<Panel class="bz-seg s1" hittest="false" />
+				<Panel class="bz-seg s2" hittest="false" />
+				<Panel class="bz-seg s3" hittest="false" />
+				<Panel class="bz-seg s4" hittest="false" />
+				<Panel class="bz-seg s5" hittest="false" />
+				<Panel class="bz-seg s6" hittest="false" />
+				<Panel class="bz-seg s7" hittest="false" />
+				<Panel class="bz-seg s8" hittest="false" />
+				<Panel class="bz-seg s9" hittest="false" />
+				<Panel class="bz-seg s10" hittest="false" />
+			</Panel>
+			<Panel class="bz-n-foot" hittest="false">
+				<Label id="bz-n-alive" class="bz-n-alive stratum-medium-tf" text="{s:nalive}" />
+				<Label id="bz-n-need" class="bz-n-need stratum-bold-tf" text="{s:nneed}" />
+			</Panel>
+			</Panel>
+			<Panel class="bz-n-timer" hittest="false"><Panel id="bz-n-timer-fill" class="bz-n-timer-fill" hittest="false" /></Panel>
+		</Panel>
+	</Panel>
+</root>

@@ -1,0 +1,27 @@
+// BlockingZones — модели для пункта «Создать предмет». Комментарии можно оставлять.
+// Name  — подпись в меню, Model — путь .vmdl из pak01_dir.vpk (удобно искать в Source 2 Viewer).
+// Новые модели прекэшируются при загрузке карты: после правки — css_bz_reload и смена карты.
+// Ниже только модели, проверенные в CS2 (конфиги BlockerPasses).
+[
+  {
+    "Name": "Сетка-забор 256",
+    "Model": "models/props/de_nuke/hr_nuke/chainlink_fence_001/chainlink_fence_001_256_capped.vmdl"
+  },
+  {
+    "Name": "Сетка-забор 256 (без столбов)",
+    "Model": "models/props/de_nuke/hr_nuke/chainlink_fence_001/chainlink_fence_001_256.vmdl"
+  },
+  {
+    "Name": "Рольставня 96x128",
+    "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_96x128_surface_lod.vmdl"
+  },
+  {
+    "Name": "Дверь Mirage (малая)",
+    "Model": "models/props/de_mirage/small_door_b.vmdl"
+  },
+  {
+    "Name": "Ворота Mirage (большие)",
+    "Model": "models/props/de_mirage/large_door_c.vmdl"
+  }
+]
+

@@ -1,0 +1,3036 @@
+{
+  "Map": "de_mirage",
+  "WorkshopId": "",
+  "Items": [
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_96x128_surface_lod.vmdl",
+      "Pos": [
+        1133.78,
+        139.28,
+        -163.97
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        1.0
+      ],
+      "Alpha": 51,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_96x128_surface_lod.vmdl",
+      "Pos": [
+        1225.76,
+        147.66,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        1.0
+      ],
+      "Alpha": 51,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_96x128_surface_lod.vmdl",
+      "Pos": [
+        1322.08,
+        147.17,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        1.0
+      ],
+      "Alpha": 51,
+      "Quota": 4
+    },
+    {
+      "Model": "models/de_overpass/vehicles/flatnose_truck/flatnose_truck_generic_1.vmdl",
+      "Pos": [
+        1071.17,
+        405.75,
+        -265.04
+      ],
+      "Ang": [
+        0.0,
+        -134.89,
+        0.99
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_garbage_container/dust_trash_bag_pile.vmdl",
+      "Pos": [
+        -2312.79,
+        -688.54,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_propane_tanks/propane_tank_01_cluster_01.vmdl",
+      "Pos": [
+        -1884.15,
+        -315.25,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/inferno_blackboard/inferno_blackboard.vmdl",
+      "Pos": [
+        -1988.05,
+        -394.36,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        -45.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/ar_dizzy/dizzy_metal_sawhorse/dizzy_metal_sawhorse.vmdl",
+      "Pos": [
+        1160.82,
+        316.65,
+        -262.87
+      ],
+      "Ang": [
+        -0.07,
+        45.2,
+        0.98
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/cs_office/offpaintinga.vmdl",
+      "Pos": [
+        -2335.97,
+        -689.57,
+        -34.41
+      ],
+      "Ang": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/foliage/palm_tree_01.vmdl",
+      "Pos": [
+        900.52,
+        505.47,
+        -253.08
+      ],
+      "Ang": [
+        0.14,
+        -0.06,
+        0.99
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/foliage/palm_tree_02.vmdl",
+      "Pos": [
+        1005.74,
+        634.25,
+        -258.95
+      ],
+      "Ang": [
+        0.16,
+        -0.14,
+        0.98
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/foliage/palm_tree_03.vmdl",
+      "Pos": [
+        1098.74,
+        588.09,
+        -263.65
+      ],
+      "Ang": [
+        -0.07,
+        -0.06,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/foliage/palm_tree_03.vmdl",
+      "Pos": [
+        895.41,
+        579.46,
+        -247.66
+      ],
+      "Ang": [
+        0.12,
+        -0.06,
+        0.99
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/nuke_office_props/nuke_office_exit_001a.vmdl",
+      "Pos": [
+        -2383.97,
+        -463.41,
+        -22.62
+      ],
+      "Ang": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/coop_cementplant/coop_ammo_stash/coop_ammo_stash_full.vmdl",
+      "Pos": [
+        1125.1,
+        361.75,
+        -210.83
+      ],
+      "Ang": [
+        0.07,
+        -0.07,
+        0.99
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_house/bed_rustic.vmdl",
+      "Pos": [
+        1275.88,
+        518.97,
+        -265.48
+      ],
+      "Ang": [
+        0.03,
+        89.96,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/nuke_industrial_props/nuke_industrial_cablebundle_003.vmdl",
+      "Pos": [
+        -2170.59,
+        -495.36,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_arrow_diaganol_001.vmdl",
+      "Pos": [
+        -2383.97,
+        -485.55,
+        -56.44
+      ],
+      "Ang": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/cs_italy/crate/italy_wood_crate_1.vmdl",
+      "Pos": [
+        1354.11,
+        510.01,
+        -259.43
+      ],
+      "Ang": [
+        -0.04,
+        0.03,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_arrow_diaganol_001.vmdl",
+      "Pos": [
+        -2383.97,
+        -497.63,
+        -73.28
+      ],
+      "Ang": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_arrow_diaganol_001.vmdl",
+      "Pos": [
+        -2383.97,
+        -509.66,
+        -89.74
+      ],
+      "Ang": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_arrow_diaganol_001.vmdl",
+      "Pos": [
+        -2383.97,
+        -522.81,
+        -107.39
+      ],
+      "Ang": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_garbage_container/dust_trash_bag_pile.vmdl",
+      "Pos": [
+        -2262.89,
+        -689.0,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_no_smoking_002.vmdl",
+      "Pos": [
+        -1759.97,
+        -497.38,
+        -30.11
+      ],
+      "Ang": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_no_smoking_002.vmdl",
+      "Pos": [
+        -1544.03,
+        -701.99,
+        -31.39
+      ],
+      "Ang": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_no_smoking_002.vmdl",
+      "Pos": [
+        -1870.62,
+        -288.03,
+        -32.0
+      ],
+      "Ang": [
+        0.0,
+        -91.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/nuke_vending_machine/nuke_vending_machine.vmdl",
+      "Pos": [
+        -2083.71,
+        -427.76,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/goldfish.vmdl",
+      "Pos": [
+        -2067.15,
+        -426.01,
+        -146.34
+      ],
+      "Ang": [
+        1.0,
+        90.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_authorised_personel_001.vmdl",
+      "Pos": [
+        -2379.27,
+        -643.5,
+        -36.47
+      ],
+      "Ang": [
+        1.0,
+        -0.0,
+        -0.04
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_fire_exit_right_up_001.vmdl",
+      "Pos": [
+        -1983.27,
+        -288.03,
+        -82.29
+      ],
+      "Ang": [
+        0.0,
+        -91.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_no_entry_002.vmdl",
+      "Pos": [
+        -2067.15,
+        -427.88,
+        -135.22
+      ],
+      "Ang": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/nuke_office_desk/nuke_conference_table.vmdl",
+      "Pos": [
+        1165.58,
+        450.32,
+        -264.19
+      ],
+      "Ang": [
+        -0.06,
+        44.99,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/coop_cementplant/coop_ammo_stash/coop_ammo_stash_full.vmdl",
+      "Pos": [
+        1125.06,
+        469.93,
+        -225.43
+      ],
+      "Ang": [
+        0.01,
+        -0.01,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/cs_office/chair_office.vmdl",
+      "Pos": [
+        1212.35,
+        405.34,
+        -264.31
+      ],
+      "Ang": [
+        0.0,
+        135.07,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/nuke_office_chair/nuke_office_chair.vmdl",
+      "Pos": [
+        1213.67,
+        464.0,
+        -264.73
+      ],
+      "Ang": [
+        0.03,
+        -90.03,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_venice/venice_museum/venice_museum_table01.vmdl",
+      "Pos": [
+        1306.94,
+        423.7,
+        -265.17
+      ],
+      "Ang": [
+        -0.07,
+        -0.03,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/cs_office/computer.vmdl",
+      "Pos": [
+        1310.34,
+        431.62,
+        -226.88
+      ],
+      "Ang": [
+        -0.0,
+        -0.02,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/crates/military_case_02.vmdl",
+      "Pos": [
+        1042.84,
+        408.24,
+        -185.74
+      ],
+      "Ang": [
+        -0.01,
+        45.01,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/crates/military_case_02.vmdl",
+      "Pos": [
+        1083.19,
+        422.48,
+        -185.42
+      ],
+      "Ang": [
+        -0.01,
+        135.01,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/crates/military_case_02.vmdl",
+      "Pos": [
+        1061.76,
+        378.38,
+        -185.14
+      ],
+      "Ang": [
+        -0.01,
+        45.01,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_vertigo/barrel_single_tintable_01.vmdl",
+      "Pos": [
+        857.12,
+        556.04,
+        -141.65
+      ],
+      "Ang": [
+        0.08,
+        -0.4,
+        0.91
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_vertigo/barrel_single_tintable_01.vmdl",
+      "Pos": [
+        912.76,
+        452.37,
+        -176.29
+      ],
+      "Ang": [
+        0.02,
+        -0.22,
+        0.97
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_vertigo/barrel_single_tintable_01.vmdl",
+      "Pos": [
+        952.18,
+        595.74,
+        -182.97
+      ],
+      "Ang": [
+        0.63,
+        -0.1,
+        0.77
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_patio_set/dust_patio_chair.vmdl",
+      "Pos": [
+        1088.88,
+        493.64,
+        -268.29
+      ],
+      "Ang": [
+        -0.06,
+        -90.01,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/nuke_office_desk/nuke_conference_table.vmdl",
+      "Pos": [
+        -1971.04,
+        -561.29,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/chair_office.vmdl",
+      "Pos": [
+        -2004.34,
+        -526.68,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/nuke_office_chair/nuke_office_chair.vmdl",
+      "Pos": [
+        -2040.1,
+        -560.4,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/chair_office.vmdl",
+      "Pos": [
+        -1947.31,
+        -595.0,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/chair_office.vmdl",
+      "Pos": [
+        -2004.57,
+        -596.28,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/computer.vmdl",
+      "Pos": [
+        -1923.04,
+        -558.6,
+        -130.77
+      ],
+      "Ang": [
+        0.02,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/coop_cementplant/coop_ammo_stash/coop_ammo_stash_full.vmdl",
+      "Pos": [
+        -2003.47,
+        -546.18,
+        -129.37
+      ],
+      "Ang": [
+        0.02,
+        -45.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/coop_cementplant/coop_ammo_stash/coop_ammo_stash_full.vmdl",
+      "Pos": [
+        -1973.62,
+        -544.12,
+        -129.89
+      ],
+      "Ang": [
+        0.02,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/chair_office.vmdl",
+      "Pos": [
+        -1946.88,
+        -527.36,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/nuke_office_chair/nuke_office_chair.vmdl",
+      "Pos": [
+        -1904.91,
+        -561.3,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        180.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/hay_bale/hay_bale_a.vmdl",
+      "Pos": [
+        -1015.2,
+        318.59,
+        -367.97
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/coop_cementplant/grenade_box/fraggrenade_box.vmdl",
+      "Pos": [
+        -927.62,
+        -290.32,
+        4.44
+      ],
+      "Ang": [
+        1.0,
+        -0.01,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/cs_office/exit_ceiling.vmdl",
+      "Pos": [
+        -1007.48,
+        278.64,
+        -228.14
+      ],
+      "Ang": [
+        -0.2,
+        -90.0,
+        -0.98
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/inferno_broom/inferno_broom.vmdl",
+      "Pos": [
+        -1059.21,
+        -318.3,
+        -367.97
+      ],
+      "Ang": [
+        0.0,
+        180.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/coop_cementplant/coop_ammo_stash/coop_ammo_stash_full.vmdl",
+      "Pos": [
+        -940.63,
+        -207.55,
+        -326.77
+      ],
+      "Ang": [
+        0.0,
+        -0.02,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/coop_cementplant/furniture/coop_wooden_table.vmdl",
+      "Pos": [
+        -937.76,
+        -223.47,
+        -363.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/computer.vmdl",
+      "Pos": [
+        -932.66,
+        -241.15,
+        -327.37
+      ],
+      "Ang": [
+        0.0,
+        179.98,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/water_bottle.vmdl",
+      "Pos": [
+        -927.81,
+        -224.89,
+        -327.08
+      ],
+      "Ang": [
+        0.0,
+        -0.02,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/cs_office/computer_caseb.vmdl",
+      "Pos": [
+        -938.56,
+        -250.97,
+        -363.97
+      ],
+      "Ang": [
+        0.0,
+        180.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/de_cache_s2/table_01/ch2_table_01.vmdl",
+      "Pos": [
+        -1005.6,
+        -116.89,
+        -367.97
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/light_streetlight.vmdl",
+      "Pos": [
+        -980.86,
+        365.02,
+        -367.97
+      ],
+      "Ang": [
+        0.0,
+        135.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/light_streetlight.vmdl",
+      "Pos": [
+        -1023.32,
+        430.15,
+        -367.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/coop_cementplant/grenade_box/smokegrenade_box.vmdl",
+      "Pos": [
+        -972.74,
+        -106.6,
+        -330.38
+      ],
+      "Ang": [
+        -0.02,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_no_smoking_002.vmdl",
+      "Pos": [
+        -920.03,
+        -283.81,
+        -262.89
+      ],
+      "Ang": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/coop_cementplant/coop_foot_locker/coop_foot_locker_closed.vmdl",
+      "Pos": [
+        -1015.99,
+        -122.19,
+        -367.97
+      ],
+      "Ang": [
+        0.0,
+        180.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_mirage/large_door_c.vmdl",
+      "Pos": [
+        131.35,
+        814.52,
+        -70.55
+      ],
+      "Ang": [
+        1.0,
+        0.0,
+        -0.02
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_no_smoking_002.vmdl",
+      "Pos": [
+        -934.23,
+        -184.03,
+        -296.68
+      ],
+      "Ang": [
+        0.0,
+        -91.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/hr_massive/survival_security_cam/survival_security_cam.vmdl",
+      "Pos": [
+        -1054.25,
+        257.12,
+        -254.48
+      ],
+      "Ang": [
+        0.86,
+        0.0,
+        -0.51
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/offpaintinge.vmdl",
+      "Pos": [
+        -920.03,
+        -237.39,
+        -282.61
+      ],
+      "Ang": [
+        -1.0,
+        90.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_inferno/chairantique_static.vmdl",
+      "Pos": [
+        -1039.15,
+        -163.42,
+        -363.94
+      ],
+      "Ang": [
+        0.08,
+        -0.27,
+        0.96
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/de_overpass/vehicles/flatnose_truck/flatnose_truck_generic_1.vmdl",
+      "Pos": [
+        -729.68,
+        -690.26,
+        -269.4
+      ],
+      "Ang": [
+        -0.0,
+        -44.93,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/generic/barrier_concrete_kit_01/barrier_concrete_01.vmdl",
+      "Pos": [
+        -665.13,
+        -841.17,
+        -263.97
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/weapons/w_eq_assault_suit.vmdl",
+      "Pos": [
+        -968.02,
+        -116.33,
+        -367.97
+      ],
+      "Ang": [
+        0.0,
+        -135.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/de_cache_s2/table_01/ch2_table_01.vmdl",
+      "Pos": [
+        272.2,
+        864.94,
+        -135.97
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/chair_office.vmdl",
+      "Pos": [
+        272.9,
+        838.23,
+        -135.97
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/computer.vmdl",
+      "Pos": [
+        273.3,
+        862.38,
+        -98.94
+      ],
+      "Ang": [
+        -0.02,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/coop_cementplant/grenade_box/fraggrenade_box.vmdl",
+      "Pos": [
+        306.19,
+        872.21,
+        -98.36
+      ],
+      "Ang": [
+        -0.02,
+        180.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/coop_cementplant/coop_ammo_stash/coop_ammo_stash_full.vmdl",
+      "Pos": [
+        305.35,
+        856.78,
+        -98.38
+      ],
+      "Ang": [
+        -0.02,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/hr_massive/survival_security_cam/survival_security_cam.vmdl",
+      "Pos": [
+        144.12,
+        752.03,
+        -24.45
+      ],
+      "Ang": [
+        0.0,
+        46.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/hr_massive/survival_security_cam/survival_security_cam.vmdl",
+      "Pos": [
+        503.8,
+        903.97,
+        -31.57
+      ],
+      "Ang": [
+        0.0,
+        -136.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/offpaintinge.vmdl",
+      "Pos": [
+        166.45,
+        887.97,
+        -44.75
+      ],
+      "Ang": [
+        0.0,
+        179.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/offpaintingf.vmdl",
+      "Pos": [
+        352.97,
+        887.97,
+        -39.3
+      ],
+      "Ang": [
+        0.0,
+        179.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_192x128_surface_lod.vmdl",
+      "Pos": [
+        521.24,
+        829.4,
+        -135.97
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 51,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/chainlink_fence_001/chainlink_fence_001_256_capped.vmdl",
+      "Pos": [
+        521.83,
+        812.5,
+        -13.77
+      ],
+      "Ang": [
+        46.0,
+        0.0,
+        0.02
+      ],
+      "Alpha": 0,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/inferno_broom/inferno_broom.vmdl",
+      "Pos": [
+        165.77,
+        868.58,
+        -135.97
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/inferno_broom/inferno_broom.vmdl",
+      "Pos": [
+        327.08,
+        882.75,
+        -135.97
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_no_smoking_002.vmdl",
+      "Pos": [
+        440.03,
+        753.23,
+        12.09
+      ],
+      "Ang": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_authorised_personel_001.vmdl",
+      "Pos": [
+        272.4,
+        887.97,
+        -67.5
+      ],
+      "Ang": [
+        0.0,
+        -91.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props_interiors/sofa_chair02.vmdl",
+      "Pos": [
+        345.71,
+        773.44,
+        -135.97
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_authorised_personel_001.vmdl",
+      "Pos": [
+        407.73,
+        875.27,
+        -29.67
+      ],
+      "Ang": [
+        -0.02,
+        -91.0,
+        -0.02
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/signs/sign_no_smoking_002.vmdl",
+      "Pos": [
+        144.03,
+        876.0,
+        -31.7
+      ],
+      "Ang": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/clock.vmdl",
+      "Pos": [
+        274.28,
+        887.97,
+        -38.6
+      ],
+      "Ang": [
+        0.0,
+        -91.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/offpaintinga.vmdl",
+      "Pos": [
+        312.17,
+        887.97,
+        -36.87
+      ],
+      "Ang": [
+        0.0,
+        -91.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/nuke_industrial_props/nuke_industrial_cablebundle_003.vmdl",
+      "Pos": [
+        251.58,
+        864.31,
+        -135.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/barrel_a/barrel_a_full.vmdl",
+      "Pos": [
+        201.04,
+        865.17,
+        -135.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/nuke_industrial_props/nuke_industrial_cablebundle_003.vmdl",
+      "Pos": [
+        461.7,
+        880.08,
+        -135.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props_interiors/tv_vertigo.vmdl",
+      "Pos": [
+        171.23,
+        809.76,
+        -105.91
+      ],
+      "Ang": [
+        -0.02,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props_c17/furnituretable001a_static.vmdl",
+      "Pos": [
+        351.5,
+        817.43,
+        -116.29
+      ],
+      "Ang": [
+        0.0,
+        -0.02,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/de_cache_s2/table_01/ch2_table_01.vmdl",
+      "Pos": [
+        276.17,
+        748.36,
+        -135.97
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/inferno_paintings/inferno_paintings_02.vmdl",
+      "Pos": [
+        409.26,
+        879.97,
+        -87.37
+      ],
+      "Ang": [
+        0.0,
+        -91.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/inferno_potted_plant/inferno_potted_plant.vmdl",
+      "Pos": [
+        275.26,
+        756.75,
+        -99.45
+      ],
+      "Ang": [
+        -0.02,
+        90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props_interiors/tv_cabinet.vmdl",
+      "Pos": [
+        177.93,
+        799.94,
+        -137.59
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/de_cache_s2/table_01/ch2_table_01.vmdl",
+      "Pos": [
+        -1019.07,
+        117.63,
+        -170.86
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/de_overpass/vehicles/flatnose_truck/flatnose_truck_generic_1.vmdl",
+      "Pos": [
+        -1625.47,
+        163.1,
+        -168.92
+      ],
+      "Ang": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/coop_cementplant/coop_foot_locker/coop_foot_locker_closed.vmdl",
+      "Pos": [
+        -993.39,
+        297.14,
+        -167.18
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/radio.vmdl",
+      "Pos": [
+        -1052.61,
+        106.86,
+        -134.19
+      ],
+      "Ang": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/nuke_concrete_barrier/nuke_concrete_barrier.vmdl",
+      "Pos": [
+        -1488.79,
+        443.09,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_patio_set/dust_patio_chair.vmdl",
+      "Pos": [
+        -1086.92,
+        111.0,
+        -171.26
+      ],
+      "Ang": [
+        0.0,
+        -65.93,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_patio_set/dust_patio_chair.vmdl",
+      "Pos": [
+        -955.04,
+        118.13,
+        -172.58
+      ],
+      "Ang": [
+        0.05,
+        90.04,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_patio_set/dust_patio_chair.vmdl",
+      "Pos": [
+        -1046.03,
+        153.1,
+        -173.8
+      ],
+      "Ang": [
+        0.0,
+        -145.95,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/barrel_a/barrel_a_full.vmdl",
+      "Pos": [
+        -1153.65,
+        104.08,
+        -169.49
+      ],
+      "Ang": [
+        0.03,
+        0.06,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/barrel_a/barrel_a_full.vmdl",
+      "Pos": [
+        -1188.51,
+        108.08,
+        -168.9
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_96x128_surface_lod.vmdl",
+      "Pos": [
+        -863.61,
+        54.9,
+        -122.04
+      ],
+      "Ang": [
+        0.05,
+        1.0,
+        -90.0
+      ],
+      "Alpha": 51,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_mirage/broken_wall_1.vmdl",
+      "Pos": [
+        -1489.73,
+        141.64,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_96x128_surface_lod.vmdl",
+      "Pos": [
+        -864.1,
+        54.73,
+        -26.56
+      ],
+      "Ang": [
+        0.01,
+        1.0,
+        -90.0
+      ],
+      "Alpha": 51,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_patio_set/dust_patio_chair.vmdl",
+      "Pos": [
+        -1415.93,
+        364.72,
+        -171.28
+      ],
+      "Ang": [
+        0.0,
+        -34.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_96x128_surface_lod.vmdl",
+      "Pos": [
+        -901.26,
+        66.13,
+        -214.22
+      ],
+      "Ang": [
+        -1.01,
+        94.02,
+        1.0
+      ],
+      "Alpha": 51,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_garbage_container/dust_trash_bag_pile.vmdl",
+      "Pos": [
+        -1413.55,
+        125.51,
+        -171.23
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/inferno_broom/inferno_broom.vmdl",
+      "Pos": [
+        -1056.51,
+        309.25,
+        -162.71
+      ],
+      "Ang": [
+        6.0,
+        90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_soccerball/dust_soccer_ball001.vmdl",
+      "Pos": [
+        -1398.83,
+        190.95,
+        -161.82
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_venice/venice_power_box/venice_power_box_02.vmdl",
+      "Pos": [
+        -1188.6,
+        311.78,
+        -166.7
+      ],
+      "Ang": [
+        -0.01,
+        -90.2,
+        0.98
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/cs_italy/crate/italy_wood_crate_1.vmdl",
+      "Pos": [
+        -933.47,
+        287.78,
+        -161.68
+      ],
+      "Ang": [
+        -0.02,
+        9.95,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/de_cache_s2/table_01/ch2_table_01.vmdl",
+      "Pos": [
+        -930.28,
+        292.38,
+        -171.49
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/coop_cementplant/grenade_box/incendiarygrenade_box.vmdl",
+      "Pos": [
+        -950.26,
+        292.31,
+        -162.09
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/cs_office/water_bottle.vmdl",
+      "Pos": [
+        -1040.74,
+        104.84,
+        -129.01
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/de_overpass/vehicles/flatnose_truck/flatnose_truck_generic_1.vmdl",
+      "Pos": [
+        -1566.61,
+        439.4,
+        -167.22
+      ],
+      "Ang": [
+        0.03,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_vertigo/barrel_single_tintable_01.vmdl",
+      "Pos": [
+        -1464.2,
+        110.56,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_vertigo/barrel_single_tintable_01.vmdl",
+      "Pos": [
+        -1461.58,
+        142.81,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/de_overpass/luggage/suitcase/suitcase_003.vmdl",
+      "Pos": [
+        -914.63,
+        291.16,
+        -161.81
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/weapons/w_eq_armor_helmet.vmdl",
+      "Pos": [
+        -980.87,
+        294.52,
+        -144.14
+      ],
+      "Ang": [
+        -0.02,
+        -81.08,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/nuke_vending_machine/nuke_snacks03.vmdl",
+      "Pos": [
+        -1030.84,
+        131.21,
+        -134.05
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/coop_cementplant/coop_ammo_stash/coop_ammo_stash_full.vmdl",
+      "Pos": [
+        -915.56,
+        293.83,
+        -136.51
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_fences/dust_chainlink_fence_gate_001_128.vmdl",
+      "Pos": [
+        -1771.35,
+        -597.82,
+        -171.55
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 51,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_house/bed_rustic.vmdl",
+      "Pos": [
+        -1231.36,
+        -608.47,
+        -167.79
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_inferno/light_streetlight.vmdl",
+      "Pos": [
+        -1159.57,
+        -532.11,
+        -377.68
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_96x128_surface_lod.vmdl",
+      "Pos": [
+        -736.09,
+        -1127.52,
+        -193.83
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Alpha": 51,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_96x128_surface_lod.vmdl",
+      "Pos": [
+        -649.02,
+        -1127.78,
+        -193.48
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Alpha": 51,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_96x128_surface_lod.vmdl",
+      "Pos": [
+        -561.72,
+        -1127.35,
+        -196.45
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Alpha": 51,
+      "Quota": 4
+    },
+    {
+      "Model": "models/de_cache_s2/table_01/ch2_table_01.vmdl",
+      "Pos": [
+        -1153.3,
+        -472.23,
+        -167.36
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/nuke_office_chair/nuke_office_chair.vmdl",
+      "Pos": [
+        -1131.02,
+        -516.12,
+        -164.94
+      ],
+      "Ang": [
+        0.0,
+        100.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_doors/dust_rollupdoor_128x128_surface_01.vmdl",
+      "Pos": [
+        -1063.98,
+        -600.79,
+        -166.66
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_doors/dust_rollupdoor_128x128_surface_01.vmdl",
+      "Pos": [
+        -1063.94,
+        -746.3,
+        -166.84
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_doors/dust_rollupdoor_128x128_surface_01.vmdl",
+      "Pos": [
+        -1271.25,
+        -600.8,
+        -166.81
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_doors/dust_rollupdoor_128x128_surface_01.vmdl",
+      "Pos": [
+        -1271.33,
+        -746.16,
+        -166.91
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_doors/dust_rollupdoor_128x128_surface_01.vmdl",
+      "Pos": [
+        -1061.95,
+        -454.64,
+        -166.56
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_train/hr_t/hr_tv_plasma/hr_tv_plasma.vmdl",
+      "Pos": [
+        -1265.57,
+        -703.99,
+        -100.8
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/anubis/dust_kasbah/dust_kasbah_window_36x64_wood_01.vmdl",
+      "Pos": [
+        -1097.97,
+        -576.86,
+        -94.79
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/anubis/dust_kasbah/dust_kasbah_window_36x64_wood_01.vmdl",
+      "Pos": [
+        -1098.1,
+        -629.39,
+        -94.77
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/anubis/dust_kasbah/dust_kasbah_window_36x64_wood_01.vmdl",
+      "Pos": [
+        -1098.0,
+        -681.7,
+        -94.89
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props_interiors/tv_vertigo.vmdl",
+      "Pos": [
+        -1172.41,
+        -470.35,
+        -131.32
+      ],
+      "Ang": [
+        0.0,
+        -60.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/cs_office/computer_caseb.vmdl",
+      "Pos": [
+        -1116.8,
+        -474.84,
+        -165.43
+      ],
+      "Ang": [
+        0.0,
+        -94.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/cs_office/computer.vmdl",
+      "Pos": [
+        -1135.73,
+        -475.12,
+        -129.36
+      ],
+      "Ang": [
+        0.0,
+        -91.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_doors/dust_rollupdoor_128x128_surface_01.vmdl",
+      "Pos": [
+        -1156.47,
+        -817.27,
+        -166.89
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/crates/military_case_02.vmdl",
+      "Pos": [
+        -1219.25,
+        -725.86,
+        -170.62
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/crates/military_case_02.vmdl",
+      "Pos": [
+        -1218.18,
+        -761.97,
+        -172.93
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/crates/military_case_02.vmdl",
+      "Pos": [
+        -1221.44,
+        -723.74,
+        -154.66
+      ],
+      "Ang": [
+        0.0,
+        85.0,
+        1.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/crates/military_case_02.vmdl",
+      "Pos": [
+        -1225.07,
+        -725.78,
+        -139.28
+      ],
+      "Ang": [
+        0.0,
+        25.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/de_inferno/inferno_paintings_01/inferno_painting_01.vmdl",
+      "Pos": [
+        -1183.26,
+        -443.27,
+        -32.63
+      ],
+      "Ang": [
+        0.0,
+        -90.0,
+        90.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/de_inferno/inferno_paintings_01/inferno_painting_02.vmdl",
+      "Pos": [
+        -1263.41,
+        -646.6,
+        -81.79
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_96x128_surface_lod.vmdl",
+      "Pos": [
+        -1151.65,
+        -815.43,
+        -167.74
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Alpha": 51,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/coop_cementplant/grenade_box/fraggrenade_box.vmdl",
+      "Pos": [
+        -1005.32,
+        296.22,
+        -143.49
+      ],
+      "Ang": [
+        0.0,
+        21.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_96x128_surface_lod.vmdl",
+      "Pos": [
+        -1010.43,
+        -86.91,
+        -365.48
+      ],
+      "Ang": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Alpha": 51,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/chainlink_fence_001/chainlink_fence_001_256_capped.vmdl",
+      "Pos": [
+        -517.67,
+        -1158.74,
+        -61.61
+      ],
+      "Ang": [
+        -1.0,
+        45.0,
+        0.0
+      ],
+      "Alpha": 0,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_nuke/hr_nuke/chainlink_fence_001/chainlink_fence_001_256_capped.vmdl",
+      "Pos": [
+        -949.38,
+        -7.68,
+        -335.24
+      ],
+      "Ang": [
+        -91.0,
+        0.0,
+        180.0
+      ],
+      "Alpha": 0,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_fences/dust_chainlink_fence_gate_001_128.vmdl",
+      "Pos": [
+        -1477.7,
+        177.34,
+        -171.1
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 0,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_fences/dust_chainlink_fence_gate_001_128.vmdl",
+      "Pos": [
+        -1467.65,
+        454.09,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Alpha": 0,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_windows/dust_rollupdoor_96x128_surface_lod.vmdl",
+      "Pos": [
+        -865.93,
+        58.64,
+        64.4
+      ],
+      "Ang": [
+        0.02,
+        -0.02,
+        -89.0
+      ],
+      "Alpha": 51,
+      "Quota": 10
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/rug_set/rug_set_a.vmdl",
+      "Pos": [
+        -786,
+        -922,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_mirage/couch_a.vmdl",
+      "Pos": [
+        -806,
+        -922,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/de_inferno/generic/side_table_square_01.vmdl",
+      "Pos": [
+        -780,
+        -922,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_mirage/pillow_a.vmdl",
+      "Pos": [
+        -758,
+        -922,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        180,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_mirage/pillow_b.vmdl",
+      "Pos": [
+        -772,
+        -962,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        90,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_mirage/pillow_c.vmdl",
+      "Pos": [
+        -772,
+        -882,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        -90,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_grain_basket/dust_grain_basket_01.vmdl",
+      "Pos": [
+        -812,
+        -866,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_lights/dust_hanging_lantern_01_small.vmdl",
+      "Pos": [
+        -782,
+        -922,
+        -40
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/de_inferno/generic/bookshelf_wood_01.vmdl",
+      "Pos": [
+        -812,
+        -1193,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/cs_italy/italy_lamps/italy_wall_lamp_01.vmdl",
+      "Pos": [
+        -823,
+        -1140,
+        -95
+      ],
+      "Ang": [
+        0.0,
+        0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/cs_italy/italy_lamps/italy_wall_lamp_01.vmdl",
+      "Pos": [
+        -779,
+        -1105,
+        -70
+      ],
+      "Ang": [
+        0.0,
+        0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/cs_italy/props/planter/italy_planter_large_1.vmdl",
+      "Pos": [
+        -805,
+        -1045,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/inferno_potted_plant/inferno_potted_plant.vmdl",
+      "Pos": [
+        -805,
+        -1080,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_cart/dust_cart.vmdl",
+      "Pos": [
+        -760,
+        -1214,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_cart/cart_carpet.vmdl",
+      "Pos": [
+        -760,
+        -1214,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_flour_sack/dust_flour_sack_stack_01.vmdl",
+      "Pos": [
+        -540,
+        -997,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        90,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_pottery/terracotta_pot_set_01.vmdl",
+      "Pos": [
+        -540,
+        -1052,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_crates/dust_wooden_fruit_crate_01.vmdl",
+      "Pos": [
+        -536,
+        -1095,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        90,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_crates/dust_crate_style_01_32x32x32.vmdl",
+      "Pos": [
+        -536,
+        -1128,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        5,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_crates/dust_crate_style_01_32x32x32.vmdl",
+      "Pos": [
+        -536,
+        -1162,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        -4,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_crates/dust_crate_style_01_32x32x32.vmdl",
+      "Pos": [
+        -536,
+        -1130,
+        -135.97
+      ],
+      "Ang": [
+        0.0,
+        20,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/de_inferno/wood_barrel_01/inferno_crate_wood_03.vmdl",
+      "Pos": [
+        -528,
+        -1226,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_detruis_sacks/dust_detruis_sack_01.vmdl",
+      "Pos": [
+        -548,
+        -1200,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        30,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_pottery/terracotta_pot_05.vmdl",
+      "Pos": [
+        -578,
+        -852,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_dust/hr_dust/dust_grain_basket/dust_grain_basket_02.vmdl",
+      "Pos": [
+        -556,
+        -852,
+        -167.97
+      ],
+      "Ang": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/cs_italy/italy_lamps/italy_wall_lamp_01.vmdl",
+      "Pos": [
+        -783,
+        -841,
+        -70
+      ],
+      "Ang": [
+        0.0,
+        -90,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/cs_italy/italy_lamps/italy_wall_lamp_01.vmdl",
+      "Pos": [
+        -580,
+        -841,
+        -95
+      ],
+      "Ang": [
+        0.0,
+        -90,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/cs_italy/italy_lamps/italy_wall_lamp_01.vmdl",
+      "Pos": [
+        -750,
+        -1255,
+        -60
+      ],
+      "Ang": [
+        0.0,
+        90,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/cs_italy/italy_lamps/italy_wall_lamp_01.vmdl",
+      "Pos": [
+        -533,
+        -1255,
+        -60
+      ],
+      "Ang": [
+        0.0,
+        90,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/cs_italy/italy_lamps/italy_wall_lamp_01.vmdl",
+      "Pos": [
+        -591,
+        -920,
+        -200
+      ],
+      "Ang": [
+        0.0,
+        0,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    },
+    {
+      "Model": "models/props/de_inferno/hr_i/rug_set/rug_set_b.vmdl",
+      "Pos": [
+        -690,
+        -905,
+        -263.97
+      ],
+      "Ang": [
+        0.0,
+        90,
+        0.0
+      ],
+      "Alpha": 255,
+      "Quota": 4
+    }
+  ]
+}

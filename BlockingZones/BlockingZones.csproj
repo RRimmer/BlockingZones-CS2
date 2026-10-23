@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>BlockingZones</AssemblyName>
+        <RootNamespace>BlockingZones</RootNamespace>
+        <Version>0.1.0</Version>
+        <DebugType>none</DebugType>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CounterStrikeSharp.API" Version="1.0.377">
+            <ExcludeAssets>runtime</ExcludeAssets>
+        </PackageReference>
+        <!-- MenuManagerApi.dll lives only in shared/MenuManagerApi (PMM core). Never copied next to the plugin. -->
+        <ProjectReference Include="..\MenuManagerApi\MenuManagerApi.csproj">
+            <Private>false</Private>
+        </ProjectReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="lang\*.json" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+</Project>
