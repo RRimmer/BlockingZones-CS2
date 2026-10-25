@@ -1,4 +1,4 @@
-# BlockingZones 0.1.0 — install
+# BlockingZones 0.1.5 — install
 
 ## EN
 

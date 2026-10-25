@@ -8,7 +8,7 @@ namespace BlockingZones;
 // Feedback goes into the status line of the panel, not into chat.
 public partial class BlockingZonesPlugin
 {
-    private enum Screen { Main, Create, Settings, Move, Rotate, Alpha, Quota, Aux, ConfirmAll }
+    private enum Screen { Main, Categories, Create, Settings, Move, Rotate, Alpha, Quota, Aux, ConfirmAll }
 
     private sealed class View
     {
@@ -20,6 +20,8 @@ public partial class BlockingZonesPlugin
         public int MoveStepIndex;               // index into Cfg.MoveSteps (key 7 on the Move screen)
         public int RotateStepIndex;             // index into Cfg.RotateSteps (key 7 on the Rotate screen)
         public float[]? MoveOrigin;             // position when the Move screen was opened (key 9 = undo)
+        public int Category;                    // section shown on the Create screen (index into _categories)
+        public int CategoryPage;                // page of the section list to return to (key 8)
     }
 
     private readonly View?[] _views = new View?[64];
@@ -112,6 +114,7 @@ public partial class BlockingZonesPlugin
         switch (v.Screen)
         {
             case Screen.Main: KeyMain(player, digit); break;
+            case Screen.Categories: KeyCategories(player, v, digit); break;
             case Screen.Create: KeyCreate(player, v, digit); break;
             case Screen.Settings: KeySettings(player, digit); break;
             case Screen.Move: KeyMove(player, v, digit); break;
@@ -143,6 +146,7 @@ public partial class BlockingZonesPlugin
         var m = v.Screen switch
         {
             Screen.Main => ModelMain(player),
+            Screen.Categories => ModelCategories(player, v),
             Screen.Create => ModelCreate(player, v),
             Screen.Settings => ModelSettings(player),
             Screen.Move => ModelMove(player, v),
@@ -197,7 +201,7 @@ public partial class BlockingZonesPlugin
         {
             case 1:
                 if (_catalog.Count == 0) Status(p, T(p, "msg.catalog_empty"), 2);
-                else OpenView(p, Screen.Create);
+                else OpenCreate(p);
                 break;
             case 2: DeleteAimed(p); break;
             case 3: OpenSettingsByAim(p); break;
@@ -211,29 +215,45 @@ public partial class BlockingZonesPlugin
         }
     }
 
-    // ---------------- create: model list ----------------
+    // ---------------- create: sections -> models ----------------
 
-    private int CreatePages => Math.Max(1, (_catalog.Count + ModelsPerPage - 1) / ModelsPerPage);
+    // One section (or the old flat items.jsonc): straight to the models.
+    private bool UseCategories => _categories.Count > 1;
 
-    private MenuModel ModelCreate(CCSPlayerController p, View v)
+    private static int Pages(int count) => Math.Max(1, (count + ModelsPerPage - 1) / ModelsPerPage);
+
+    private void OpenCreate(CCSPlayerController p)
     {
-        v.Page = Math.Clamp(v.Page, 0, CreatePages - 1);
+        var v = _views[p.Slot] ??= new View();
+        v.Category = 0;
+        v.CategoryPage = 0;
+        OpenView(p, UseCategories ? Screen.Categories : Screen.Create);
+    }
+
+    private MenuModel ModelCategories(CCSPlayerController p, View v)
+    {
+        int pages = Pages(_categories.Count);
+        v.Page = Math.Clamp(v.Page, 0, pages - 1);
         var m = new MenuModel
         {
-            Title = T(p, "hud.create.title"),
-            Sub = T(p, "hud.create.sub", ("PAGE", v.Page + 1), ("PAGES", CreatePages), ("COUNT", _catalog.Count)),
-            Status = T(p, "hud.create.hint"),
+            Title = T(p, "hud.cats.title"),
+            Sub = T(p, "hud.cats.sub", ("COUNT", _categories.Count), ("MODELS", _catalog.Count)),
+            Status = T(p, "hud.cats.hint"),
             Back = T(p, "hud.back")
         };
         int start = v.Page * ModelsPerPage;
-        for (int i = 0; i < ModelsPerPage && start + i < _catalog.Count; i++)
-            m.Rows.Add(Row(i + 1, _catalog[start + i].Name));
-        if (v.Page < CreatePages - 1) m.Rows.Add(Row(9, T(p, "hud.more"), accent: true));
+        for (int i = 0; i < ModelsPerPage && start + i < _categories.Count; i++)
+        {
+            var cat = _categories[start + i];
+            m.Rows.Add(Row(i + 1, CategoryName(p, cat), cat.Items.Count.ToString()));
+        }
+        if (v.Page < pages - 1) m.Rows.Add(Row(9, T(p, "hud.more"), accent: true));
         return m;
     }
 
-    private void KeyCreate(CCSPlayerController p, View v, int d)
+    private void KeyCategories(CCSPlayerController p, View v, int d)
     {
+        int pages = Pages(_categories.Count);
         if (d == 8)
         {
             if (v.Page > 0) v.Page--;
@@ -242,12 +262,72 @@ public partial class BlockingZonesPlugin
         }
         if (d == 9)
         {
-            if (v.Page < CreatePages - 1) v.Page++;
+            if (v.Page < pages - 1) v.Page++;
             return;
         }
         int index = v.Page * ModelsPerPage + d - 1;
-        if (d is >= 1 and <= ModelsPerPage && index < _catalog.Count)
-            StartPreview(p, _catalog[index]);
+        if (d is >= 1 and <= ModelsPerPage && index < _categories.Count)
+        {
+            v.CategoryPage = v.Page;
+            v.Category = index;
+            OpenView(p, Screen.Create);
+        }
+    }
+
+    private CatalogCategory? CurrentCategory(View v) =>
+        v.Category >= 0 && v.Category < _categories.Count ? _categories[v.Category] : null;
+
+    private MenuModel? ModelCreate(CCSPlayerController p, View v)
+    {
+        var cat = CurrentCategory(v);
+        if (cat == null)
+        {
+            // items.jsonc was reloaded and the section is gone
+            if (_catalog.Count == 0) OpenView(p, Screen.Main, 0, T(p, "msg.catalog_empty"), 2);
+            else OpenCreate(p);
+            return null;
+        }
+        var list = cat.Items;
+        int pages = Pages(list.Count);
+        v.Page = Math.Clamp(v.Page, 0, pages - 1);
+        var m = new MenuModel
+        {
+            Title = UseCategories ? CategoryName(p, cat) : T(p, "hud.create.title"),
+            Sub = T(p, "hud.create.sub", ("PAGE", v.Page + 1), ("PAGES", pages), ("COUNT", list.Count)),
+            Status = T(p, "hud.create.hint"),
+            Back = T(p, "hud.back")
+        };
+        int start = v.Page * ModelsPerPage;
+        for (int i = 0; i < ModelsPerPage && start + i < list.Count; i++)
+            m.Rows.Add(Row(i + 1, CatalogName(p, list[start + i])));
+        if (v.Page < pages - 1) m.Rows.Add(Row(9, T(p, "hud.more"), accent: true));
+        return m;
+    }
+
+    private void KeyCreate(CCSPlayerController p, View v, int d)
+    {
+        var cat = CurrentCategory(v);
+        if (cat == null)
+        {
+            OpenView(p, Screen.Main);
+            return;
+        }
+        var list = cat.Items;
+        if (d == 8)
+        {
+            if (v.Page > 0) v.Page--;
+            else if (UseCategories) OpenView(p, Screen.Categories, v.CategoryPage);
+            else OpenView(p, Screen.Main);
+            return;
+        }
+        if (d == 9)
+        {
+            if (v.Page < Pages(list.Count) - 1) v.Page++;
+            return;
+        }
+        int index = v.Page * ModelsPerPage + d - 1;
+        if (d is >= 1 and <= ModelsPerPage && index < list.Count)
+            StartPreview(p, list[index]);
     }
 
     // ---------------- 2. delete (aim) ----------------
@@ -261,7 +341,7 @@ public partial class BlockingZonesPlugin
             return;
         }
 
-        string name = ModelName(it.Model);
+        string name = ModelName(p, it.Model);
         RemoveItem(it);
         Status(p, T(p, "msg.deleted", ("NAME", name)), 1);
     }
@@ -299,11 +379,11 @@ public partial class BlockingZonesPlugin
     }
 
     private (string, string, string) Card(CCSPlayerController p, BzItem it) =>
-        ("#" + (_items.IndexOf(it) + 1), ModelName(it.Model),
+        ("#" + (_items.IndexOf(it) + 1), ModelName(p, it.Model),
             T(p, "hud.card.info", ("STATE", T(p, it.Entity is { IsValid: true } ? "state.spawned" : "state.hidden")),
                 ("QUOTA", it.Quota), ("PERCENT", Percent(it.Alpha))));
 
-    private string ItemLine(BzItem it) => "#" + (_items.IndexOf(it) + 1) + " " + ModelName(it.Model);
+    private string ItemLine(CCSPlayerController p, BzItem it) => "#" + (_items.IndexOf(it) + 1) + " " + ModelName(p, it.Model);
     private static int Percent(int alpha) => (int)Math.Round(alpha * 100 / 255.0);
     private static string Position(BzItem it) => $"{Fmt(it.Pos[0])} · {Fmt(it.Pos[1])} · {Fmt(it.Pos[2])}";
     private static string Angles(BzItem it) => $"X {Fmt(it.Ang[0])}° · Y {Fmt(it.Ang[1])}° · Z {Fmt(it.Ang[2])}°";
@@ -352,7 +432,7 @@ public partial class BlockingZonesPlugin
             case 6:
                 var it = EditTarget(p);
                 if (it == null) return;
-                string name = ModelName(it.Model);
+                string name = ModelName(p, it.Model);
                 RemoveItem(it);
                 OpenView(p, Screen.Main, 0, T(p, "msg.deleted", ("NAME", name)), 1);
                 break;
@@ -375,7 +455,7 @@ public partial class BlockingZonesPlugin
         var m = new MenuModel
         {
             Title = T(p, "hud.move.title"),
-            Sub = ItemLine(it),
+            Sub = ItemLine(p, it),
             Now = (T(p, "hud.now"), Position(it)),
             Status = T(p, "hud.move.hint"),
             Back = T(p, "hud.back")
@@ -452,7 +532,7 @@ public partial class BlockingZonesPlugin
         var m = new MenuModel
         {
             Title = T(p, "hud.rotate.title"),
-            Sub = ItemLine(it),
+            Sub = ItemLine(p, it),
             Now = (T(p, "hud.now"), Angles(it)),
             Status = T(p, "hud.rotate.hint"),
             Back = T(p, "hud.back")
@@ -506,7 +586,7 @@ public partial class BlockingZonesPlugin
         var m = new MenuModel
         {
             Title = T(p, "hud.alpha.title"),
-            Sub = ItemLine(it),
+            Sub = ItemLine(p, it),
             Now = (T(p, "hud.now"), $"{Percent(it.Alpha)}% · {it.Alpha}"),
             Status = T(p, "hud.alpha.hint"),
             Back = T(p, "hud.back")
@@ -545,7 +625,7 @@ public partial class BlockingZonesPlugin
         var m = new MenuModel
         {
             Title = T(p, "hud.quota.title"),
-            Sub = ItemLine(it),
+            Sub = ItemLine(p, it),
             Now = (T(p, "hud.now"), T(p, "hud.quota.now", ("QUOTA", it.Quota))),
             Status = T(p, "hud.quota.hint", ("QUOTA", it.Quota)),
             Back = T(p, "hud.back")

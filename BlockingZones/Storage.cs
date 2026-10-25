@@ -1,5 +1,6 @@
 using System.Text.Json;
 using CounterStrikeSharp.API;
+using CounterStrikeSharp.API.Core;
 using CounterStrikeSharp.API.Modules.Utils;
 using Microsoft.Extensions.Logging;
 
@@ -12,7 +13,8 @@ namespace BlockingZones;
 //   maps/workshop/<id>/<map>.json       items of a workshop map (like the CS:GO plugin: workshop/<id>/<map>.txt)
 public partial class BlockingZonesPlugin
 {
-    private List<CatalogEntry> _catalog = new();
+    private List<CatalogEntry> _catalog = new();          // all models (lookup, precache)
+    private List<CatalogCategory> _categories = new();    // the same models by section (menu)
 
     // Every item of the current map, spawned this round or not. "Save" writes all of them,
     // so items hidden by the quota are not lost (the CS:GO plugin saved only the spawned entities).
@@ -97,26 +99,104 @@ public partial class BlockingZonesPlugin
                 Logger.LogInformation("Created {Path}", CatalogPath);
             }
 
-            _catalog = (JsonSerializer.Deserialize<List<CatalogEntry>>(File.ReadAllText(CatalogPath), Json.Read) ?? new())
-                .Where(c => !string.IsNullOrWhiteSpace(c.Model))
-                .Select(c => new CatalogEntry
+            var root = JsonSerializer.Deserialize<List<JsonElement>>(File.ReadAllText(CatalogPath), Json.Read) ?? new();
+            var cats = new List<CatalogCategory>();
+            CatalogCategory? loose = null;
+            foreach (var el in root)
+            {
+                if (el.ValueKind != JsonValueKind.Object) continue;
+                if (TryProp(el, "Items", out var list) && list.ValueKind == JsonValueKind.Array)
                 {
-                    Model = c.Model.Trim(),
-                    Name = string.IsNullOrWhiteSpace(c.Name) ? ShortModelName(c.Model) : c.Name.Trim()
-                })
-                .ToList();
+                    TryProp(el, "Category", out var catName);
+                    var cat = new CatalogCategory { Names = ReadNames(catName) };
+                    foreach (var it in list.EnumerateArray())
+                        if (ReadEntry(it) is { } entry) cat.Items.Add(entry);
+                    if (cat.Items.Count > 0) cats.Add(cat);
+                }
+                else if (ReadEntry(el) is { } entry)
+                {
+                    if (loose == null)
+                    {
+                        loose = new CatalogCategory();
+                        cats.Add(loose);
+                    }
+                    loose.Items.Add(entry);
+                }
+            }
+            _categories = cats;
+            _catalog = cats.SelectMany(c => c.Items).ToList();
         }
         catch (Exception e)
         {
             Logger.LogError("items.jsonc is broken ({Error}): the model list is empty", e.Message);
             _catalog = new List<CatalogEntry>();
+            _categories = new List<CatalogCategory>();
         }
     }
 
-    internal string ModelName(string model)
+    private static CatalogEntry? ReadEntry(JsonElement el)
+    {
+        if (el.ValueKind != JsonValueKind.Object) return null;
+        var raw = el.Deserialize<CatalogEntry>(Json.Read);
+        if (raw == null || string.IsNullOrWhiteSpace(raw.Model)) return null;
+        return new CatalogEntry { Model = raw.Model.Trim(), Names = ReadNames(raw.Name) };
+    }
+
+    private static bool TryProp(JsonElement el, string name, out JsonElement value)
+    {
+        foreach (var prop in el.EnumerateObject())
+        {
+            if (!prop.Name.Equals(name, StringComparison.OrdinalIgnoreCase)) continue;
+            value = prop.Value;
+            return true;
+        }
+        value = default;
+        return false;
+    }
+
+    // "Name": "text" or { "ru": "...", "en": "..." }. Empty values are skipped.
+    private static Dictionary<string, string> ReadNames(JsonElement name)
+    {
+        var names = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        if (name.ValueKind == JsonValueKind.String)
+        {
+            string s = name.GetString()?.Trim() ?? "";
+            if (s.Length > 0) names[""] = s;
+        }
+        else if (name.ValueKind == JsonValueKind.Object)
+        {
+            foreach (var prop in name.EnumerateObject())
+            {
+                if (prop.Value.ValueKind != JsonValueKind.String) continue;
+                string s = prop.Value.GetString()?.Trim() ?? "";
+                if (s.Length > 0) names[prop.Name.Trim()] = s;
+            }
+        }
+        return names;
+    }
+
+    // Name in the player's language (the lang file of that language says which code it is: "lang.code"),
+    // then English, then a plain string, then the first one, then the model file name.
+    internal string CatalogName(CCSPlayerController? player, CatalogEntry entry) =>
+        PickName(player, entry.Names) ?? ShortModelName(entry.Model);
+
+    internal string CategoryName(CCSPlayerController? player, CatalogCategory cat) =>
+        PickName(player, cat.Names) ?? T(player, "hud.create.other");
+
+    private string? PickName(CCSPlayerController? player, Dictionary<string, string> names)
+    {
+        if (names.Count == 0) return null;
+        string lang = T(player, "lang.code");
+        if (names.TryGetValue(lang, out var s)) return s;
+        if (names.TryGetValue("en", out s)) return s;
+        if (names.TryGetValue("", out s)) return s;
+        return names.Values.First();
+    }
+
+    internal string ModelName(CCSPlayerController? player, string model)
     {
         var entry = _catalog.FirstOrDefault(c => c.Model.Equals(model, StringComparison.OrdinalIgnoreCase));
-        return entry?.Name ?? ShortModelName(model);
+        return entry != null ? CatalogName(player, entry) : ShortModelName(model);
     }
 
     private static string ShortModelName(string model)

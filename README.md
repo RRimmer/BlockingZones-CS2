@@ -10,7 +10,7 @@ Author: **Rimmer**. A CS2 / CounterStrikeSharp plugin inspired by BlockingZones 
 While the server has few **alive** players, passages on the map are closed with props (`prop_dynamic`).
 Every item has its own quota: it stays while alive T+CT players are **fewer** than its quota.
 
-Current version: **0.1.0**. Needs CounterStrikeSharp 1.0.374+ (built against 1.0.377, .NET 10) and
+Current version: **0.1.5**. Needs CounterStrikeSharp 1.0.374+ (built against 1.0.377, .NET 10) and
 [PanoramaMenuManager](https://github.com/RRimmer/PanoramaMenuManagerCS2) core **1.3.00+**.
 
 - Own green Panorama layout **bz**: menu, preview key strip, "Part of the map is closed" banner.
@@ -21,6 +21,7 @@ Current version: **0.1.0**. Needs CounterStrikeSharp 1.0.374+ (built against 1.0
 - Item settings: move (forward / back / left / right from the view, up / down, put back), rotation, visibility, quota, delete.
   Move and rotation steps are switched with key 7 and set in the config (`MoveSteps`, `RotateSteps`).
 - One JSON per map (`maps/<map>.json`, `maps/workshop/<id>/<map>.json`), `config.jsonc` and `items.jsonc` with comments.
+- "Create item" → section → model. `items.jsonc` ships 7 sections with 133 CS2 models (fences, doors and shutters, walls and barriers, containers and crates, pallets and barrels, vehicles, misc), sections and models each with a Russian and English name: `"Name": { "ru": "…", "en": "…" }` — the menu shows the player's language.
 - Notifications: chat and / or the bz banner with fade in / out and a countdown bar.
 - `templates/de_mirage.json` — a ready de_mirage layout converted from a CS:GO config (not created automatically).
 
@@ -74,7 +75,7 @@ License: GPL-3.0.
 Пока на сервере мало **живых** игроков, проходы на карте закрываются предметами (`prop_dynamic`).
 У каждого предмета своя квота: предмет стоит, пока живых игроков T+CT **меньше** его квоты.
 
-Текущая версия: **0.1.0**. Нужны CounterStrikeSharp 1.0.374+ (собрано под 1.0.377, .NET 10) и
+Текущая версия: **0.1.5**. Нужны CounterStrikeSharp 1.0.374+ (собрано под 1.0.377, .NET 10) и
 [PanoramaMenuManager](https://github.com/RRimmer/PanoramaMenuManagerCS2) core **1.3.00+**.
 
 - Своя зелёная панорама **bz**: меню, полоса клавиш предпросмотра, баннер «Часть карты закрыта».
@@ -85,6 +86,7 @@ License: GPL-3.0.
 - Настройки предмета: передвинуть (вперёд / назад / влево / вправо от взгляда, вверх / вниз, вернуть), поворот, видимость, квота, удаление.
   Шаги передвижения и поворота переключаются клавишей 7 и задаются в конфиге (`MoveSteps`, `RotateSteps`).
 - JSON на каждую карту (`maps/<map>.json`, `maps/workshop/<id>/<map>.json`), `config.jsonc` и `items.jsonc` с комментариями.
+- «Создать предмет» → раздел → модель. В `items.jsonc` 7 разделов и 133 модели CS2 (заборы, двери и рольставни, стены и барьеры, контейнеры и ящики, поддоны и бочки, транспорт, разное), у разделов и моделей название на русском и английском: `"Name": { "ru": "…", "en": "…" }` — меню показывает язык игрока.
 - Уведомления: чат и / или баннер bz с плавным появлением и угасанием и полоской-таймером.
 - `templates/de_mirage.json` — готовая раскладка de_mirage, перенесённая из конфига CS:GO (сама не создаётся).
 

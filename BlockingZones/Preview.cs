@@ -35,7 +35,7 @@ public partial class BlockingZonesPlugin
         }
 
         StopPreview(player.Slot, false);
-        var pv = new PreviewState { Model = entry.Model, Name = entry.Name };
+        var pv = new PreviewState { Model = entry.Model, Name = CatalogName(player, entry) };
         _previews[player.Slot] = pv;
 
         ShowRoot(player, RootMenu, false);

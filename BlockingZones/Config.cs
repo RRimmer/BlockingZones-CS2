@@ -97,11 +97,23 @@ public sealed class PreviewConfig
     }
 }
 
-// items.jsonc: models offered in "Create item".
+// items.jsonc: sections of "Create item": [ { "Category": name, "Items": [ CatalogEntry ] } ].
+// A model in the root of the list (old flat format) goes to an unnamed section ("Other").
+public sealed class CatalogCategory
+{
+    public Dictionary<string, string> Names { get; set; } = new(StringComparer.OrdinalIgnoreCase);
+    public List<CatalogEntry> Items { get; set; } = new();
+}
+
+// One model of "Create item".
+// "Name" is a plain string or a translation per player language: { "ru": "...", "en": "..." }.
 public sealed class CatalogEntry
 {
-    public string Name { get; set; } = "";
+    public JsonElement Name { get; set; }
     public string Model { get; set; } = "";
+
+    // Filled from Name on load: language code -> text ("" = plain string without a language).
+    [JsonIgnore] public Dictionary<string, string> Names { get; set; } = new(StringComparer.OrdinalIgnoreCase);
 }
 
 // One item of maps/<map>.json.

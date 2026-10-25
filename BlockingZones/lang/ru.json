@@ -1,4 +1,5 @@
 {
+  "lang.code": "ru",
   "prefix": "{GREEN}[BZ]{DEFAULT}",
   "msg.no_access": "{RED}Нет доступа.",
   "msg.pmm_missing": "{RED}Нужен PanoramaMenuManager (PMM core >= 1.3.00){DEFAULT}: без него цифры не доходят до плагина.",
@@ -22,6 +23,10 @@
   "hud.main.unsaved": "есть изменения",
   "hud.main.show_all": "Показать все предметы",
   "hud.main.delete_all": "Удалить ВСЕ предметы",
+  "hud.cats.title": "Выбор раздела",
+  "hud.cats.sub": "Разделов: {COUNT} · моделей: {MODELS}",
+  "hud.cats.hint": "Цифра открывает раздел, справа — число моделей",
+  "hud.create.other": "Без раздела",
   "hud.create.title": "Выбор модели",
   "hud.create.sub": "Страница {PAGE} из {PAGES} · моделей: {COUNT}",
   "hud.create.hint": "Цифра — модель, дальше предпросмотр",

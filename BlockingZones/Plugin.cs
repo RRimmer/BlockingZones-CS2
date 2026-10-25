@@ -24,7 +24,7 @@ namespace BlockingZones;
 public partial class BlockingZonesPlugin : BasePlugin
 {
     public override string ModuleName => "BlockingZones";
-    public override string ModuleVersion => "0.1.0";
+    public override string ModuleVersion => "0.1.5";
     public override string ModuleAuthor => "Rimmer";
     public override string ModuleDescription => "Blocks parts of the map with props while there are not enough alive players";
 
